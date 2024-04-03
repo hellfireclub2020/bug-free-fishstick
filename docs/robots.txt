@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://github.com/hellfireclub2020/bug-free-fishstick/sitemap.xml
