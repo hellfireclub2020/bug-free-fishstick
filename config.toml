@@ -10,11 +10,14 @@ build_search_index = true
 # Use after-dark theme from the `themes` directory
 theme = "after-dark"
 
+# For overriding the default output directory `public`, set it to another value (e.g.: "docs")
+output_dir = "docs"
+
 # Taxonomies
 taxonomies = [
     # You can enable/disable RSS
-    {name = "categories", feed = true},
-    {name = "tags", feed = true},
+    { name = "categories", feed = true },
+    { name = "tags", feed = true },
 ]
 
 [markdown]
@@ -29,10 +32,10 @@ author = "hfc2020"
 
 # The menu items that will be displayed in the header
 after_dark_menu = [
-    {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/categories", name = "Categories"},
-    {url = "$BASE_URL/tags", name = "Tags"},
-    {url = "https://kagi.com", name = "Kagi"},
+    { url = "$BASE_URL", name = "Home" },
+    { url = "$BASE_URL/categories", name = "Categories" },
+    { url = "$BASE_URL/tags", name = "Tags" },
+    { url = "https://kagi.com", name = "Kagi" },
 ]
 
 # The title of the site
