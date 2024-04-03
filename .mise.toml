@@ -1,2 +1,20 @@
 [tools]
 zola = "latest"
+
+[tasks.build]
+run = "gum spin zola build"
+description = "Build the site"
+
+[tasks.push]
+run = "gum spin git push"
+description = "Push the site to the remote repository"
+depends = ["commit"]
+
+[tasks.commit]
+run = "gum spin git yolo"
+description = "Commit the changes to the site"
+depends = ["build"]
+
+[tasks.full]
+run = "open https://hellfireclub2020.github.io/bug-free-fishstick/"
+depends = ["push"]
